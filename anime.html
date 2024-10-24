@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            background-color: blueviolet;
+            width: 200px;
+            height: 300px;
+            transition-property:width;
+            transition-property: height;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+        }
+        .box1:hover{
+            background-color: rgb(50, 70, 70);
+            width: 1200px;
+            height: 1000px;
+            transform: rotate(100%);
+        }
+        img{
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            height: 200px;
+            width: 300px;
+            margin: 200px;
+            animation-name: annas;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            
+            
+        }
+        @keyframes annas {
+            from{
+                border-radius: 0%;
+                height: 200px;
+                width: 300px;
+                transform: translateX(0px);
+                transform: rotate(0deg);
+            }
+            to{
+                border-radius: 100%;
+                height: 300px;
+                width: 500px;
+                transform: translateX(500px);
+                transform: rotate(360deg);
+            }
+            
+        }
+        .box3{
+            animation-name: anime;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+       @keyframes anime {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+        
+       }
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+    
+        <img src="flower.jfif" alt="">
+
+    
+    <div class="box3">
+<img src="flower.jfif" alt="">
+    </div>
+   
+</body>
+</html>
